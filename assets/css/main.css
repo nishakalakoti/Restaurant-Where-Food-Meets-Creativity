@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --h1: 70px ;
+    --h2:  60px;
+    --h3:  50px;
+
+     
+     --p1: 20px;
+     --p2: 18px;
+     --p3: 16px;
+     --p4: 13px;
+     --p5: 12px;
+
+     --font-1:'David Libre', serif;
+     --font-2:'Inter', sans-serif;
+     
+    
+    --color-orange: #ea6d27;
+    --color-dark-gray: #101a24;
+    --color-lite-gray:#5c6574;
+    --color-white:#ffffff;
+
+}
+
+
+/*** style rule for h1 to h5 ***/
+h1{
+    font-size: 70px ;
+}
+h2{
+    font-size: 60px;
+}
+h3{
+    font-size: 50px;
+}
+
+
+
+/*** style rule for p1 to p3 ***/
+.p1{
+ font-size: var(--p1);
+}
+.p2{
+    font-size: var(--p2);
+   }
+.p3{
+    font-size: var(--p3);
+}
+.p4{
+    font-size: var(--p4);
+}
+.p5{
+    font-size: var(--p5);
+}
+
+
+/*** style rule for butn-one ***/
+.btn-1{
+    color: var(--color-white);
+    background-color: var(--color-dark-gray);
+   
+}
+.btn-2{
+    color: var(--color-white);
+    background-color: var(--color-orange);
+}
+
+
+
+/*** style rule for color ***/
+
+.color-orange{
+ color: var(--color-orange);
+
+}
+.color-dark-gray{
+    color:var(--color-dark-gray) ;
+   
+}
+   
+.color-lite-gray{
+ color:var(--color-lite-gray) ;
+
+}
+
+.color-white{
+    color: var(--color-white);
+   
+}
+
+
+/*** style rule for color ***/
+.font-1{
+    font-family: var(--font-1);
+}
+.font-2{
+    font-family: var(--font-2);
+}
+
+
+/*** style rule for color ***/
+
+/*** style rule for navbar ***/
+/*** style rule for fotter ***/
+
+
+
+/*** style rule for multimedia ***/
+@media (max-width: 1400px) {
+    .container{
+        max-width: 1200px;
+        padding: 0, 20px;
+        margin: 0,auto;
+    }
+ }
+@media (max-width: 1200px) {
+    .container{
+        max-width: 1000px;
+        padding: 0, 20px;
+    }
+ }
+
+@media (max-width: 1024px) {
+    .container{
+        max-width:800px;
+        padding: 0, 20px;
+    }
+ }
+
+@media (max-width: 768px) {
+    .container{
+        max-width: 500px;
+        padding: 0, 20px;
+    }
+ }
+
+ @media (max-width: 568px) {
+    .container{
+        max-width: 300%;
+        padding: 0, 20px;
+    }
+ }
