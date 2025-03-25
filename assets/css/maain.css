@@ -25,6 +25,8 @@
     --color-lite-gray:#5c6574;
     --color-white:#ffffff;
 
+    --bgc-color:#F3F4F4;
+
 }
 
 
@@ -47,15 +49,26 @@ h3{
 }
 .p2{
     font-size: var(--p2);
+    font-weight: 400;
+    font-style: var(--font-1);
+    color: var(--color-lite-gray);
+    
    }
 .p3{
     font-size: var(--p3);
+    font-weight: 400;
+    font-style: var(--font-1);
+    color: var(--color-lite-gray);
 }
 .p4{
     font-size: var(--p4);
+    font-weight: 400;
+    font-style: var(--font-1);
 }
 .p5{
     font-size: var(--p5);
+    font-weight: 700;
+    font-style: var(--font-1);
 }
 
 
@@ -63,11 +76,20 @@ h3{
 .btn-1{
     color: var(--color-white);
     background-color: var(--color-dark-gray);
+    padding: 20px;
+
    
 }
 .btn-2{
     color: var(--color-white);
     background-color: var(--color-orange);
+    padding: 15px;
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px; 
+    border-bottom-right-radius: 15px; 
+
+      
 }
 
 
@@ -102,41 +124,232 @@ h3{
     font-family: var(--font-2);
 }
 
+/*** style rule for commen class ***/
+body{
+    background-color: whitesmoke;
+}
+.container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 0px 20px;
+ 
+   
+}
+.responsive-image{
+    max-width: 100%;
+    height: auto;
+}
 
-/*** style rule for color ***/
+a{
+    text-decoration: none;
+}
+u{
+    color: var(--color-lite-gray);
+}
+body{
+    width: 100%;
+}
 
 /*** style rule for navbar ***/
-/*** style rule for fotter ***/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 82px;
+    position: relative; 
+}
 
+ul {
+    display: flex;
+    gap: 50px;
+}
+
+li {
+    list-style: none; 
+    align-items: center; 
+    padding: 10px 0;
+}
+
+nav img {
+    padding-bottom: 15px;
+}
+.navbar_icons i{
+    cursor: pointer;
+    font-size: var(--h3);
+   
+}
+.navbar_icons {
+    display: none;
+}
+.hide{
+    display: none;
+}
+
+/** Image Styling **/
+
+.ruler {
+    position: absolute; 
+    left: 0;          
+    right: 0;         
+    top: 0;
+    width:30%;     
+    height: auto;       /
+}
+
+
+/*** style rule for fotter ***/
+.img-icon-footer .bii{
+    padding:  0 5px;
+    font-size: 20px;
+    color: #000;
+}
+.footer-contant{
+    display: flex;
+    gap: 150px;
+ 
+   
+}
+.footer-contant-1{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+}
+.footer-contant-1 img{
+    max-width: 200px;
+}
+.footer-contant-middel, .last-child{
+   padding: 20px 0;
+}
+.lower-upper-pannel{
+    display: flex;
+    font-display: row;
+    gap: 70px;
+    padding-bottom: 30px;
+
+}
+.lower-last-pannel{
+    display: flex;
+    justify-content: space-between;
+   padding-top: 30px;
+}
+.lower-last-pannel-right-side{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+footer{
+    margin-top: 50vh;
+    padding-top: 50px;
+    padding-bottom: 200px;
+   position: relative;
+   overflow: hidden;
+   
+   
+}
+.fotter-bgc-img {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 55%; 
+        transform: translate(-50%, -50%);  
+        width: auto; 
+        height: auto; 
+        max-width: 100%;     
+}
+[class^="footer-contant--"]{
+   display: flex;
+   flex-direction: column;
+   gap: 18px;
+   padding: 40px 0;
+}
 
 
 /*** style rule for multimedia ***/
 @media (max-width: 1400px) {
     .container{
         max-width: 1200px;
-        padding: 0, 20px;
-        margin: 0,auto;
+        padding: 0, 30px;
     }
  }
+
 @media (max-width: 1200px) {
     .container{
         max-width: 1000px;
         padding: 0, 20px;
     }
+    .footer-contant{
+        display: flex;
+        gap: 100px;
+     
  }
-
+}
 @media (max-width: 1024px) {
     .container{
         max-width:800px;
         padding: 0, 20px;
     }
- }
+
+    /** navbar-media**/
+    .navbar_icons{
+        display: block;
+        padding:  0 50px;
+    }
+    ul,.btn-2{
+        display: none;
+    }
+    .ruler {
+        position: absolute; 
+        left: 0;          
+        right: 0;         
+        top: 0;
+        bottom: 30px;
+        width:50%;     
+        height: auto;       
+    }
+
+    /** foteer-media**/
+    .footer-contant{
+        display: flex;
+        gap: 30px;
+     }
+     .lower-upper-pannel{
+        gap: 30px;
+    }
+
+}
 
 @media (max-width: 768px) {
     .container{
-        max-width: 500px;
+        max-width: 600px;
         padding: 0, 20px;
     }
+    .ruler {
+        position: absolute; 
+        left: 0;          
+        right: 0;         
+        top: 0;
+        bottom: 30px;
+        width:55%;     
+        height: auto;       
+    }
+    nav img{
+        width: 220px;
+    }
+    .lower-upper-pannel{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer-contant{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .lower-last-pannel{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
+   
  }
 
  @media (max-width: 568px) {
@@ -144,4 +357,49 @@ h3{
         max-width: 300%;
         padding: 0, 20px;
     }
- }
+    .navbar_icons i{
+        cursor: pointer;
+        font-size: 40px;
+        font-weight: 700;
+        padding-left: 10px;
+       
+    }
+    .ruler {
+        position: absolute; 
+        left: 0;          
+        right: 0;         
+        top: 0;
+        bottom: 30px;
+        width:70%;     
+        height: auto;       
+    }
+
+    footer{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .lower-upper-pannel{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer-contant{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+       
+    }
+    .footer-contant-1{
+       align-items: center;
+
+    }
+    .lower-last-pannel{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+   
+}
+ 
